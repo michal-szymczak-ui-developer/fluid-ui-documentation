@@ -4,6 +4,7 @@ export default defineConfig({
   title: "Fluid UI Documentation",
   description: "Fluid Modern CSS Starter",
   lastUpdated: true,
+  base: "/docs/",
   markdown: {
     lineNumbers: true,
   },
@@ -47,7 +48,10 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      {
+        icon: "github",
+        link: "https://github.com/michal-szymczak-ui-developer",
+      },
     ],
   },
 });
