@@ -34,10 +34,10 @@ And finally we define a class based on that value:
 }
 ```
 
-::: warning Better User Experience ..
+::: warning Better User Experience ...
 
 <ul>
-<li> In final CSS we use <strong>rem</strong> values, however there are <strong>px</strong> values <strong class="text-no-wrap">#{g-fluid(32px, 58px)} </strong> - it's easier to get the <strong>px</strong> values from the designs file (Figma etc.).</li>
-<li>User accessibility - there is rem value inside the clamp() to support zooming</li>
+<li> In final CSS we use <strong>rem</strong> values, however there are <strong>px</strong> values in the function call <strong class="text-no-wrap">#{g-fluid(32px, 58px)}</strong>. It's easier to get the <strong>px</strong> values from the designs file (Figma etc.).</li>
+<li>User accessibility - there is rem value inside the clamp() to support browser zooming</li>
 </ul>
 :::
