@@ -4,7 +4,7 @@
 
 </div>
 
-## Fluid UI is a modern CSS Starter:
+## Fluid UI is a modern CSS Starter with:
 
 <ul>
   <li>fluid paddings, margins, gaps, font sizes - based on CSS clamp function</li>
@@ -14,5 +14,3 @@
   <li>CSS development environment ready</li>
   <li>Stylelint and Prettier ready</li>
 </ul>
-
-[[toc]]
