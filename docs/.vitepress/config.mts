@@ -42,7 +42,7 @@ export default defineConfig({
         text: "Development",
         items: [
           { text: "Stylelint & Prettier", link: "/stylelint-prettier" },
-          { text: "About us", link: "/about-us" },
+          { text: "Links", link: "/links" },
         ],
       },
     ],

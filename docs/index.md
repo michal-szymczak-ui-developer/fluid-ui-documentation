@@ -1,8 +1,8 @@
-<style>
-    img { width: 220px; margin-bottom: 3rem; }
-</style>
+<div class="fluid-logo">
 
 ![fluid ui logo](./images/logo-fluid-ui.svg)
+
+</div>
 
 # Fluid UI is a modern CSS Starter:
 
