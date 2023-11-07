@@ -50,7 +50,11 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/michal-szymczak-ui-developer",
+        link: "https://github.com/michal-szymczak-ui-developer/fluid-ui/",
+      },
+      {
+        icon: "twitter",
+        link: "https://twitter.com/themisza/",
       },
     ],
   },
