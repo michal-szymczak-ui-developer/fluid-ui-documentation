@@ -20,19 +20,19 @@ That means that this font size will scale linear from 32px (on mobile) to 58px (
 
 ![fluid font size scaling](./images/fluid-font-size-1000.png)
 
-Below the compiled CSS for **--g-fs-1000** variable :
+The compiled CSS for **--g-fs-1000** variable:
 
 ```CSS
 --g-fs-1000: clamp(2rem, 2.65vw + 1.24rem, 3.63rem);
 ```
 
-And finally based on that value we define a class:
+And finally we define a class based on that value:
 
 ```CSS
-.fs-1000: var(--g-fs-1000);
+.fs-1000 {
+    font-size: var(--g-fs-1000);
+}
 ```
-
-And finally you will get a set of CSS utility classes ready to use for font size values, margins, paddings, gaps.
 
 ::: warning Better User Experience ..
 
