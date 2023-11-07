@@ -1,6 +1,6 @@
 # Fluid layout
 
-The most important things in User Interface are spacing and typography.<br/>
+One of the most important things in User Interface is spacing and typography.<br/>
 In Fluid UI those values changes relatively to viewport width without arbitrary breakpoints.
 ::: tip Fluid means that...
 we can get rid of classical breakpoints such as <strong>xs, sm, md, lg, xl, xxl, 3xl, ... </strong>

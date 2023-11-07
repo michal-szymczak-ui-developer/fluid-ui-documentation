@@ -1,10 +1,10 @@
 <div class="fluid-logo">
 
-![fluid ui logo](./images/logo-fluid-ui.svg)
+![fluid ui logo](./images/logo-fluid-ui-white.svg)
 
 </div>
 
-# Fluid UI is a modern CSS Starter:
+## Fluid UI is a modern CSS Starter:
 
 <ul>
   <li>fluid paddings, margins, gaps, font sizes - based on CSS clamp function</li>
