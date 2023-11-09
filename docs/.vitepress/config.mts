@@ -23,11 +23,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Introduction",
+        text: "How to use",
         items: [
-          { text: "How to use", link: "/how-to-use" },
+          { text: "Installation", link: "/installation" },
+          { text: "File system", link: "/file-system" },
           { text: "Fluid layout", link: "/fluid" },
-          { text: "SCSS Directory structure", link: "/directory-structure" },
+          { text: "Settings", link: "/settings" },
         ],
       },
       {

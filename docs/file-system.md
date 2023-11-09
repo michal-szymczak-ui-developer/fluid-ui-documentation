@@ -1,6 +1,6 @@
-<h1>Directory structure</h1>
+<h1>File system</h1>
 
-The directories structure is based on the Inverted Triangle CSS methodology.
+The directories structure is a variation of the [Inverted Triangle CSS methodology](https://developer.helpscout.com/seed/glossary/itcss/#:~:text=As%20the%20name%20implies%2C%20your,overrides%20should%20be%20added%20last.).
 
 ![Structure](http://fluid-ui.michalszymczak.com/fluid-ui-specificity.png)
 
@@ -44,11 +44,15 @@ If you App/Webpage uses external frameworks (eg. Bootstrap, PrimeNG etc) this is
 - import additional frameworks files including variables, components, utilities etc.
   If you don't need external framework - feel free to remove this directory!
 
+::: tip :bulb: CSS Reset
+In the <code>index.scss</code> we have already included modified version of [Modern CSS Reset](https://andy-bell.co.uk/a-more-modern-css-reset/). Feel free to remove it if you have another CSS Reset.
+:::
+
 ## Base
 
 `./05-base/`
 
-Base styling eg. body, typography, accessibility rules. If you dont use external framework this the place to include external CSS reset.
+Base styling eg. body, typography, accessibility focus-visible.
 
 ## Layout
 

@@ -2,11 +2,11 @@
 
 One of the most important things in User Interface is spacing and typography.<br/>
 In Fluid UI those values changes relatively to viewport width without arbitrary breakpoints.
-::: tip Fluid means that...
+::: tip :bulb: Fluid means that...
 we can get rid of classical breakpoints such as <strong>xs, sm, md, lg, xl, xxl, 3xl, ... </strong>
 :::
 
-In our library we use <code>CSS clamp()</code> function to calculate all the values.
+In our library we use CSS [<code>clamp()</code>](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function to calculate all the values.
 
 ## Example:
 
