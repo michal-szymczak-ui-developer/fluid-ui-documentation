@@ -1,7 +1,7 @@
 # Settings
 
 ::: tip :bulb: Below steps are optional.
-All settings are already defined by CSS variables.
+All settings are already defined by CSS variables - it's up to you whether to change them.
 :::
 
 ## Design tokens
@@ -22,7 +22,7 @@ In <code>settings/design-tokens.scss</code> tweak basic spacers, font-sizes and 
 
 ## Define Fluid minimum and maximum resolution
 
-Go to <code>settings/fluid-breakpoint.scss</code> file and specify the minimum and maximum resolution for which the CSS fluid values will be calculated.
+Go to <code>settings/fluid-breakpoint.scss</code> file and specify the minimum (mobile) and maximum (desktop) resolution for which the CSS fluid values will be calculated.
 
 ```CSS
 $g-default-min-bp: 460px;
@@ -31,25 +31,33 @@ $g-default-max-bp: 1440px;
 
 ## Adjust semantic variables:
 
-In <code>settings/global.scss</code> adjust global values for default global paddings, margins, gaps classes e.g.:
+In <code>settings/global.scss</code> adjust global values used to generate default global classes used for paddings, margins, gaps.
+
+### Example
+
+For a default layout gutter we defined a semantic value:
 
 ```CSS
---g-gutter: 1rem;
+:root {
+    --g-gutter: var(--g-spacer-500);
+}
 ```
 
-will be used later for a CSS class:
+that will be used later for a CSS class:
 
 ```CSS
-.ps-gutter {
+.p-gutter {
    padding: var(--g-gutter);
 }
 
 .g-gutter {
    gap: var(--g-gutter);
 }
-```
 
-Same with .g-border, .g-shadow, .g-rounded, .g-transition.
+.ms-gutter {
+   margin-left: var(--g-gutter);
+}
+```
 
 ## Adapt the typography to your needs
 
