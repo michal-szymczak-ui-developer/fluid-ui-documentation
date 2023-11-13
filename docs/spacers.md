@@ -1,10 +1,10 @@
 # Spacers
 
-Fluid UI generates a set of spacer utility classes for paddings, margins and gaps based on all spacing CSS variables defined in <code>./styles/design-tokens.scss</code>.
+Fluid UI generates a set of spacer utility classes for paddings, margins and gaps.
 
-We use the format: <code>{property}{direction}-{size}</code>, for example:
+## CSS Variables
 
-**CSS Variables**
+Basic spacing design tokens are defined in <code>./settings/design-tokens.scss</code>.
 
 ```SCSS
   --g-spacer-50: 0.25rem; // 4px
@@ -13,7 +13,21 @@ We use the format: <code>{property}{direction}-{size}</code>, for example:
   --g-spacer-1000: #{g-fluid(128px, 256px)};
 ```
 
-**Generated classes**
+Then we define SCSS map in <code>./settings/global.scss </code>
+
+```SCSS
+  $g-spacers: (
+    50: var(--g-spacer-50),
+    100: var(--g-spacer-100),
+    ...
+);
+
+```
+
+## Generated classes
+
+Based on above SCSS Map we generate set of spacing classes.<br/>
+We use the format: <code>{property}-{direction}-{size}</code> like:
 
 ```CSS
 .p-50 {
@@ -32,7 +46,7 @@ We use the format: <code>{property}{direction}-{size}</code>, for example:
 
 All classes are generated for sizes from 50, 100, 200, ... to 1000.
 
-## Paddings
+## Paddings - available classes
 
 | Class | Property       |
 | ----- | -------------- |
@@ -44,7 +58,7 @@ All classes are generated for sizes from 50, 100, 200, ... to 1000.
 | px-   | padding-inline |
 | py-   | padding-block  |
 
-## Margins
+## Margins - available classes
 
 | Class | Property      |
 | ----- | ------------- |
@@ -56,7 +70,7 @@ All classes are generated for sizes from 50, 100, 200, ... to 1000.
 | mx-   | margin-inline |
 | my-   | margin-block  |
 
-## Gaps
+## Gaps - available classes
 
 | Class | Property   |
 | ----- | ---------- |
