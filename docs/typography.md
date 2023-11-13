@@ -1,10 +1,10 @@
 # Typography
 
-Fluid UI generates a set of font-sizes utility classes based on all spacing CSS variables defined in <code>./settings/design-tokens.scss</code>.
+Fluid UI generates a set of font-sizes utility classes like `.fs-100`, `.fs-200` and many more.
 
 ## CSS Variables
 
-Basic design tokens are defined in <code>./settings/design-tokens.scss</code>.
+Basic font sizes design tokens are defined in <code>./settings/design-tokens.scss</code>.
 
 ```SCSS
   --g-fs-100: 0.625rem;
@@ -24,7 +24,7 @@ Then we define SCSS map in <code>./settings/global.scss </code>
 
 ## Generated classes
 
-Based on above SCSS Map finally we generate set of font-sizes classes.<br/>
+Based on above SCSS Map we generate set of font-sizes classes.<br/>
 We use the format: <code>{fs}-{size}</code>.
 
 ```CSS
