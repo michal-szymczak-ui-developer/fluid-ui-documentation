@@ -4,7 +4,7 @@ We describe primary color using Hue, Saturation and Lightness. That hue componen
 
 ## CSS Variables
 
-Basic design tokens are defined in <code>./styles/design-tokens.scss</code>.
+Basic design tokens are defined in <code>./settings/design-tokens.scss</code>.
 
 ```SCSS
   --g-color-blue-h: 200deg;
@@ -16,7 +16,7 @@ Basic design tokens are defined in <code>./styles/design-tokens.scss</code>.
 
 ```
 
-Then we define **semantic** color variables in in <code>./styles/global.scss</code>
+Then we define **semantic** color variables in in <code>./settings/global.scss</code>
 
 ```SCSS
   // Primary
@@ -49,14 +49,16 @@ $g-colors: (
 
 ## Generated classes
 
-Based on above map finally we generate classes for text, background and border color.
-We use the format: <code>{property}-{color}</code>.
+Based on above SCSS Map finally we generate classes for text, background and border color.
+We use the format: <code>{property}-{color}-{scale}</code>.
 
 | Class   | Property         |
 | ------- | ---------------- |
 | text-   | color            |
 | bg-     | background-color |
 | border- | border-color     |
+
+**Examples**
 
 ```CSS
 .text-primary {
