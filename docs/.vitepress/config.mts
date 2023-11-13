@@ -37,6 +37,7 @@ export default defineConfig({
           { text: "Spacers", link: "/spacers" },
           { text: "Typography", link: "/typography" },
           { text: "Colors", link: "/colors" },
+          { text: "Utilities", link: "/utilities" },
         ],
       },
       {

@@ -12,7 +12,7 @@ In our library we use CSS [<code>clamp()</code>](https://developer.mozilla.org/e
 
 Let's define font size with a CSS variable:
 
-```CSS
+```SCSS
 --g-fs-1000: #{g-fluid(32px, 58px)};
 ```
 
@@ -22,13 +22,13 @@ That means that this font size will scale linear from 32px (on mobile) to 58px (
 
 The compiled CSS for **--g-fs-1000** variable:
 
-```CSS
+```SCSS
 --g-fs-1000: clamp(2rem, 2.65vw + 1.24rem, 3.63rem);
 ```
 
 And finally we define a class based on that value:
 
-```CSS
+```SCSS
 .fs-1000 {
     font-size: var(--g-fs-1000);
 }
