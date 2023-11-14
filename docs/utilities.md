@@ -1,14 +1,55 @@
 # Utilities
 
-Beside spacing, typography and color Fluid UI contains some other CSS functionalities.
+Besides spacers, typography and color **Fluid UI** contains other CSS functional classes.
 
-## Default border, shadow, transition
+## .border
 
-.border
-.transition
-.shadow
+Use `.border` for **default styles** for those property.
+Border related variables are defined in <code>./settings/global.scss </code>
 
-Define variable and use classes
+```SCSS
+  // Borders
+  --g-border-width: 1px;
+  --g-border-color: var(--g-gray-200);
+  --g-border-radius: var(--g-rounded);
+  --g-border: var(--g-border-width) solid var(--g-border-color);
+```
+
+Definition of `.border` class in <code>./utilities/border.scss </code>
+
+```SCSS
+.border {
+  border: var(--g-border);
+}
+```
+
+## .rounded
+
+Use `.rounded` for **default styles** for those property.
+Border radius related variables are defined in <code>./settings/global.scss </code>
+
+```SCSS
+  --g-rounded-50: var(--g-spacer-50);
+  --g-rounded-100: var(--g-spacer-100);
+  --g-rounded-200: var(--g-spacer-200);
+  --g-rounded-300: var(--g-spacer-300);
+  --g-rounded-400: var(--g-spacer-400);
+  --g-rounded-500: var(--g-spacer-500);
+  --g-rounded-full: 9999px;
+  --g-rounded: var(--g-spacer-100);
+```
+
+List of class:
+
+| Class        | Rounding       |
+| ------------ | -------------- |
+| rounded-50   | --g-spacer-50  |
+| rounded-100  | --g-spacer-100 |
+| rounded-200  | --g-spacer-200 |
+| rounded-300  | --g-spacer-300 |
+| rounded-400  | --g-spacer-400 |
+| rounded-500  | --g-spacer-500 |
+| rounded-full | 9999px         |
 
 ## .wrapper
 
@@ -105,4 +146,4 @@ Vertical and horizontal stacks, basic "center all" container.
 
 There are many basic flex and grid related classes similarly to Bootstrap e.g. `.d-flex`, `.d-grid`, `.justify-content-start`, `.align-items-center` etc.
 
-##
+## Shadow
