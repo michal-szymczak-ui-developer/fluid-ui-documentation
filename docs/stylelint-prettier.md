@@ -1,5 +1,8 @@
 # Stylelint and Prettier
 
+**Fluid UI** is a modern starter prepared for better CSS development.
+We use [**Stylelint**](https://stylelint.io/) with additional packages:
+
 ```json
 {
   "stylelint"
@@ -10,7 +13,7 @@
 }
 ```
 
-And .stylelintrc configuration:
+**Stylelint** configration is defined in `.stylelintrc`:
 
 ```json
 {
@@ -45,7 +48,7 @@ And .stylelintrc configuration:
 }
 ```
 
-Prettier config in `.prettierrc.json`:
+[Prettier](https://prettier.io/) configuration is defined in `.prettierrc.json`:
 
 ```json
 {
