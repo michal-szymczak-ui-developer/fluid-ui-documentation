@@ -45,7 +45,7 @@ For a default layout gutter we defined a semantic value:
 
 that will be used later for a CSS class:
 
-```SCSS
+```CSS
 .p-gutter {
    padding: var(--g-gutter);
 }

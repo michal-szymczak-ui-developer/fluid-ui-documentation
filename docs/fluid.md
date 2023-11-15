@@ -6,7 +6,7 @@ In Fluid UI those values changes relatively to viewport width without arbitrary 
 we can get rid of classical breakpoints such as <strong>xs, sm, md, lg, xl, xxl, 3xl, ... </strong>
 :::
 
-In our library we use CSS [<code>clamp()</code>](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function to calculate all the values.
+In our library we use CSS [<code>clamp()</code>](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function to calculate all the values for different sizes scale: **50**, **100**, **200**, **300**, **400**, **500**, **600**, **700**, **800**, **900**, **1000**.
 
 ## Example:
 
@@ -28,7 +28,7 @@ The compiled CSS for **--g-fs-1000** variable:
 
 And finally we define a class based on that value:
 
-```SCSS
+```CSS
 .fs-1000 {
     font-size: var(--g-fs-1000);
 }

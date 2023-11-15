@@ -58,7 +58,7 @@ $g-text-styles: (
 
 Then you can include those styles for any selector by using a mixin:
 
-```SCSS
+```CSS
 h1,
 .h1 {
   @include g-text-style("h1");

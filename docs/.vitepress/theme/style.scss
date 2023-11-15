@@ -159,3 +159,13 @@
     width: 200px;
   }
 }
+
+table {
+  tr {
+    td {
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 # Spacers
 
-Fluid UI generates a set of spacer utility classes for paddings, margins and gaps.
+Fluid UI generates a set of spacer utility classes for paddings, margins and gaps.<br/>
+We use sizes scale: **50**, **100**, **200**, **300**, **400**, **500**, **600**, **700**, **800**, **900**, **1000**.
 
 ## CSS Variables
 
@@ -10,7 +11,6 @@ Basic spacing design tokens are defined in <code>./settings/design-tokens.scss</
   --g-spacer-50: 0.25rem; // 4px
   --g-spacer-100: #{g-fluid(4px, 8px)};
   ...
-  --g-spacer-1000: #{g-fluid(128px, 256px)};
 ```
 
 Then we define SCSS map in <code>./settings/global.scss </code>
