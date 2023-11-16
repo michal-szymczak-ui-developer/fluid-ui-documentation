@@ -24,6 +24,7 @@ export default defineConfig({
     sidebar: [
       {
         text: "How to use",
+        collapsed: false,
         items: [
           { text: "Installation", link: "/installation" },
           { text: "File system", link: "/file-system" },
@@ -33,6 +34,7 @@ export default defineConfig({
       },
       {
         text: "CSS",
+        collapsed: false,
         items: [
           { text: "Spacers", link: "/spacers" },
           { text: "Typography", link: "/typography" },
@@ -42,6 +44,7 @@ export default defineConfig({
       },
       {
         text: "Development",
+        collapsed: false,
         items: [
           { text: "Stylelint & Prettier", link: "/stylelint-prettier" },
           { text: "Links", link: "/links" },
